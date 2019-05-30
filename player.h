@@ -20,7 +20,7 @@ class player {
 
 public:
 
-	//Return Functions:
+	//Get Functions:
 	// these functions return the values of their respective private variables
 	string GetName() { return name; }
 	int GetLevel() { return level; }
@@ -29,6 +29,41 @@ public:
 	int GetHp() { return hp; }
 	int GetMaxMp() { return max_mp; }
 	int GetMp() { return mp; }
+	int GetBaseStr() { return base_str; }
+	int GetBaseCon() { return base_con; }
+	int GetBaseDex() { return base_dex; }
+	int GetBaseInt() { return base_int; }
+	int GetBaseWis() { return base_wis; }
+	int GetBaseCha() { return base_cha; }
+	int GetStr() { return str; }
+	int GetCon() { return con; }
+	int GetDex() { return dex; }
+	int GetInt() { return int_; }
+	int GetWis() { return wis; }
+	int GetCha() { return cha; }
+
+	//Set Functions:
+	// these functions set the value of their respective private variables
+	void SetName(string x) { name = x; }
+	void SetLevel(int x) { level = x; }
+	void SetXp(int x) { xp = x; }
+	void SetMaxHp(int x) { max_hp = x; }
+	void SetHp(int x) { hp = x; }
+	void SetMaxMp(int x) { max_mp = x; }
+	void SetMp(int x) { mp = x; }
+	void SetBaseStr(int x) { base_str = x; }
+	void SetBaseCon(int x) { base_con = x; }
+	void SetBaseDex(int x) { base_dex = x; }
+	void SetBaseInt(int x) { base_int = x; }
+	void SetBaseWis(int x) { base_wis = x; }
+	void SetBaseCha(int x) { base_cha = x; }
+	void SetStr(int x) { str = x; }
+	void SetCon(int x) { con = x; }
+	void SetDex(int x) { dex = x; }
+	void SetInt(int x) { int_ = x; }
+	void SetWis(int x) { wis = x; }
+	void SetCha(int x) { cha = x; }
+
 
 private:
 
