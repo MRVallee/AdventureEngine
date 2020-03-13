@@ -7,7 +7,7 @@
 *
 *  Author: Michael Vallee
 *
-*  Last Modified: 5/30/2019
+*  Last Modified: 3/13/2020
 *
 ***********************************************************************/
 
@@ -15,6 +15,8 @@
 #define PLAYER
 
 #include "library.h"
+
+using namespace std;
 
 class player {
 
@@ -64,6 +66,12 @@ public:
 	void SetWis(int x) { wis = x; }
 	void SetCha(int x) { cha = x; }
 
+	//Higher Level Functions:
+	// these functions preform more complicated and specialized tasks
+	void Generate();		//this function generates the player character
+	void Character();		//this function displays the character sheet
+	void XpCheck();			//this function checks ot see if the player is ready to level up
+	void LevelUp();			//this function levels up the player
 
 private:
 
@@ -90,6 +98,9 @@ private:
 	int int_;		//stores the player's current intelligence
 	int wis;		//stores the playe's curent wisdom
 	int cha;		//stores the player's current charisma
+
+	//stores the players inventory as a vector of the item class
+	vector<item> inventory;
 
 };
 

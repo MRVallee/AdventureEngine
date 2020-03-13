@@ -1,6 +1,6 @@
 /***********************************************************************
 *
-*  File: main.cc
+*  File: main.cpp
 *
 *  Description: This file contains the main program.  All of the code
 *               written is put to use in this file for the executible.

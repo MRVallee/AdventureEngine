@@ -29,6 +29,12 @@ public:
 		_choices = c;
 	}
 
+	//overloaded operator to read in choices
+	friend istream& operator >>(choice& x, encounter& y) { input(x, y); }
+
+	//function called in >> operator
+	void input(choice& x, encounter& y);
+
 private:
 
 	encounter() {}   //default constructor

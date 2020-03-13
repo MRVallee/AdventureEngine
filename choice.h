@@ -30,6 +30,12 @@ public:
 		_text = text;
 	}
 
+	//overloaded operator to read in text
+	friend istream& operator >>(istream& ins, choice& x) { input(ins, x); }
+
+	//function called in >> operator
+	void input(istream& ins, choice& x);
+
 private:
 
 	choice() {}   //default constructor

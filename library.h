@@ -8,7 +8,7 @@
 *
 *  Author: Michael Vallee
 *
-*  Last Modified: 4/28/2019
+*  Last Modified: 3/13/2020
 *
 ***********************************************************************/
 
@@ -23,5 +23,6 @@
 //Header Files
 #include "choice.h"
 #include "encounter.h"
+#include "item.h"
 
 #endif //LIBRARY
