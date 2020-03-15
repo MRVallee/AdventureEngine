@@ -18,6 +18,17 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\choice.h" />
+    <ClInclude Include="include\encounter.h" />
+    <ClInclude Include="include\item.h" />
+    <ClInclude Include="include\library.h" />
+    <ClInclude Include="include\player.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\player.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{6B01D7D8-D0B0-4BD3-9D8F-8FCDDDAF9887}</ProjectGuid>
@@ -119,20 +130,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\AdventureEngine\choice.h" />
-    <ClInclude Include="..\..\..\..\Desktop\AdventureEngine\encounter.h" />
-    <ClInclude Include="..\..\..\..\Desktop\AdventureEngine\item.h" />
-    <ClInclude Include="..\..\..\..\Desktop\AdventureEngine\library.h" />
-    <ClInclude Include="..\..\..\..\Desktop\AdventureEngine\player.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\AdventureEngine\main.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\AdventureEngine\player.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\..\..\..\Desktop\AdventureEngine\pdcurses.a" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
