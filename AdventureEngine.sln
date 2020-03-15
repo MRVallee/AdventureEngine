@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.438
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1", "Project1.vcxproj", "{6B01D7D8-D0B0-4BD3-9D8F-8FCDDDAF9887}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdventureEngine", "AdventureEngine.vcxproj", "{6B01D7D8-D0B0-4BD3-9D8F-8FCDDDAF9887}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AD27AC33-2ADC-46F8-842A-0778A5AF1610}
+		SolutionGuid = {C624D8E5-677F-46A9-A977-073AA1A3FA6A}
 	EndGlobalSection
 EndGlobal
