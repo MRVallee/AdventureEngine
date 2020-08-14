@@ -27,5 +27,6 @@
 #include "encounter.h"
 #include "item.h"
 #include "player.h"
+#include "window.h"
 
 #endif //LIBRARY

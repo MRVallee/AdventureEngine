@@ -21,13 +21,16 @@
     <ClInclude Include="include\item.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\library.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\choice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\library.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

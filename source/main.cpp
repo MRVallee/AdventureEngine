@@ -7,7 +7,7 @@
 *
 *  Author: Michael Vallee
 *
-*  Last Modified: 4/28/2019
+*  Last Modified: 8/14/2020
 *
 ***********************************************************************/
 
@@ -17,11 +17,13 @@ using namespace std;
 
 int main() {
 
-	initscr();
-	printw("Hello World!");
-	refresh();
-	getch();
-	endwin();
+	window game;
+	player you;
+
+	game.Initialize();
+	you.Generate();
+	you.Character();
+	game.Kill();
 
 	return 0;
 
