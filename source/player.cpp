@@ -56,6 +56,8 @@ void player::Generate() {
 //this function displays the character sheet
 void player::Character() {
 
+	erase();
+
 	printw("Health: %i\n", hp);
 	printw("Mana: %i\n\n", mp);
 	printw("Strength: %i\n", str);
@@ -67,6 +69,7 @@ void player::Character() {
 
 	refresh();
 	getch();
+	erase();
 
 }
 
@@ -84,5 +87,38 @@ void player::XpCheck() {
 
 //this function levels up the player
 void player::LevelUp() {
+
+}
+
+//this function attempts to equip an item to the player
+void player::Equip(item x) {
+
+	//for general equiping
+	if ((x.GetSlot() > 1) && (x.GetSlot() < 10)) {
+		SetEquip(x, x.GetSlot());
+	}
+	//for rings
+	else if (x.GetSlot() == 10) {
+		erase();
+		printw("Equip on slot 1 or 2?\n");
+		refresh();
+
+	}
+	//for one handed items
+	else if (x.GetSlot() == 11) {
+		erase();
+		printw("Equip on slot 1 or 2?\n");
+		refresh();
+
+	}
+	//for two handed items
+	else if (x.GetSlot() == 12) {
+
+	}
+
+}
+
+//this function calculates the player's current stats from items and buffs
+void player::Calculate() {
 
 }

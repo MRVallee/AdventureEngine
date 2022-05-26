@@ -32,6 +32,7 @@ public:
 	std::string GetDesc() { return desc; }
 	int GetConsume() { return consume; }
 	int GetDuration() { return duration; }
+	int GetSlot() { return slot; }
 	int GetHp() { return hp; }
 	int GetMp() { return mp; }
 	int GetStr() { return str; }
@@ -47,6 +48,7 @@ public:
 	void SetDesc(int x) { desc = x; }
 	void SetConsume(int x) { consume = x; }
 	void SetDuration(int x) { duration = x; }
+	void SetSlot(int x) { slot = x; }
 	void SetHp(int x) { hp = x; }
 	void SetMp(int x) { mp = x; }
 	void SetStr(int x) { str = x; }
@@ -56,6 +58,24 @@ public:
 	void SetWis(int x) { wis = x; }
 	void SetCha(int x) { cha = x; }
 
+
+	//Default Constructor
+	item() {
+		name = "NO_NAME";
+		desc = "NO_DESC";
+		consume = false;
+		duration = 0;
+		slot = 0;
+		hp = 0;
+		mp = 0;
+		str = 0;
+		con = 0;
+		dex = 0;
+		int_ = 0;
+		wis = 0;
+		cha = 0;
+	}
+
 private:
 
 	std::string name;           //stores the name of the item
@@ -63,6 +83,21 @@ private:
 
 	bool consume;          //if true, the item can be consumed
 	int duration;          //if the item is consumable this is the length of its effect
+
+	int slot;			//determines what slot the item is equipped to
+						// 0 - not equipabe
+						// 1 - head
+						// 2 - sholders
+						// 3 - neck
+						// 4 - body
+						// 5 - wrists
+						// 6 - hands
+						// 7 - waist
+						// 8 - legs
+						// 9 - feet
+						// 10 - finger
+						// 11 - one handed
+						// 12 - two handed
 
 	//the following values are stat modifications caused by the item.
 	// if the item is consumable the item causes a temporary stat change

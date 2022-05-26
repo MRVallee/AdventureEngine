@@ -48,6 +48,8 @@ public:
 	int GetInt() { return int_; }
 	int GetWis() { return wis; }
 	int GetCha() { return cha; }
+	item GetEquip(int x) { return equip[x]; }
+	bool GetTwoHand() { return two_hand; }
 
 	//Set Functions:
 	// these functions set the value of their respective private variables
@@ -70,13 +72,17 @@ public:
 	void SetInt(int x) { int_ = x; }
 	void SetWis(int x) { wis = x; }
 	void SetCha(int x) { cha = x; }
+	void SetEquip(item x, int y) { equip[y] = x; }
+	void SetTwoHand(bool x) { two_hand = x; }
 
 	//Higher Level Functions:
-	// these functions preform more complicated and specialized tasks
+	// these functions perform more complicated and specialized tasks
 	void Generate();		//this function generates the player character
 	void Character();		//this function displays the character sheet
 	void XpCheck();			//this function checks ot see if the player is ready to level up
 	void LevelUp();			//this function levels up the player
+	void Equip(item x);		//this function attempts to equip an item to the player
+	void Calculate();		//this function calculates the player's current stats from items and buffs
 
 private:
 
@@ -103,6 +109,25 @@ private:
 	int int_;		//stores the player's current intelligence
 	int wis;		//stores the playe's curent wisdom
 	int cha;		//stores the player's current charisma
+
+	item equip[14];	//stores the gear the player has equiped.
+					//14 for sanity issues on the off chance a 0 item gets equiped
+					// 0 - dummy slot
+					// 1 - head
+					// 2 - sholders
+					// 3 - neck
+					// 4 - body
+					// 5 - wrists
+					// 6 - hands
+					// 7 - waist
+					// 8 - legs
+					// 9 - feet
+					// 10 - finger 1
+					// 11 - finger 2
+					// 12 - hand 1
+					// 13 - hand 2
+	
+	bool two_hand;	//tells the game to only check hand_1 for held item as it is two handed.
 
 	//stores the players inventory as a vector of the item class
 	std::vector<item> inventory;
