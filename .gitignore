@@ -1,3 +1,5 @@
 #Don't track content of this folder
 .vs/
 Debug/
+AdventureEngine.vcxproj.filters
+AdventureEngine.vcxproj.user
