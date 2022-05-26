@@ -7,14 +7,19 @@
 *
 *  Author: Michael Vallee
 *
-*  Last Modified: 8/14/2020
+*  Last Modified: 5/26/2022
 *
 ***********************************************************************/
 
 #ifndef WINDOW
 #define WINDOW
 
-#include "library.h"
+//Standard Libraries
+#include <iostream>
+#include <string>
+#include <vector>
+//Additional Libraries
+#include "curses.h"
 
 using namespace std;
 

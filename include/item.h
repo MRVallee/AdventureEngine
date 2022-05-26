@@ -7,14 +7,18 @@
 *
 *  Author: Michael Vallee
 *
-*  Last Modified: 3/13/2020
+*  Last Modified: 5/26/2022
 *
 ***********************************************************************/
 
 #ifndef ITEM
 #define ITEM
 
-#include "library.h"
+//Standard Libraries
+#include <iostream>
+#include <string>
+#include <vector>
+
 
 using namespace std;
 
@@ -24,8 +28,8 @@ public:
 
 	//Get Functions:
 	// these functions return the values of their respective private variables
-	string GetName() { return name; }
-	string GetDesc() { return desc; }
+	std::string GetName() { return name; }
+	std::string GetDesc() { return desc; }
 	int GetConsume() { return consume; }
 	int GetDuration() { return duration; }
 	int GetHp() { return hp; }
@@ -54,8 +58,8 @@ public:
 
 private:
 
-	string name;           //stores the name of the item
-	string desc;           //stores the description of the item
+	std::string name;           //stores the name of the item
+	std::string desc;           //stores the description of the item
 
 	bool consume;          //if true, the item can be consumed
 	int duration;          //if the item is consumable this is the length of its effect

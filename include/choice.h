@@ -9,7 +9,7 @@
 *
 *  Author: Michael Vallee
 *
-*  Last Modified: 4/28/2019
+*  Last Modified: 5/26/2022
 *
 ***********************************************************************/
 
@@ -17,7 +17,10 @@
 #ifndef CHOICE
 #define CHOICE
 
-#include "library.h"
+//Standard Libraries
+#include <iostream>
+#include <string>
+#include <vector>
 
 using namespace std;
 
@@ -26,7 +29,7 @@ class choice {
 public:
 
 	//constructor
-	choice(string text) {
+	choice(std::string text) {
 		_text = text;
 	}
 
@@ -40,7 +43,7 @@ private:
 
 	choice() {}   //default constructor
 
-	string _text;   //contains the text displayed for this choice
+	std::string _text;   //contains the text displayed for this choice
 
 };
 

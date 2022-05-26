@@ -8,7 +8,7 @@
 *
 *  Author: Michael Vallee
 *
-*  Last Modified: 4/28/2019
+*  Last Modified: 5/26/2022
 *
 ***********************************************************************/
 
@@ -16,7 +16,13 @@
 #ifndef ENCOUNTER
 #define ENCOUNTER
 
-#include "library.h"
+//Standard Libraries
+#include <iostream>
+#include <string>
+#include <vector>
+//Header Files
+#include "choice.h"
+
 
 using namespace std;
 
@@ -39,7 +45,7 @@ private:
 
 	encounter() {}   //default constructor
 
-	vector<choice> _choices;   //a vector containing all of the possible choices that a
+	std::vector<choice> _choices;   //a vector containing all of the possible choices that a
 		                       // player can make at this encounter 
 
 };

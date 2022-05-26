@@ -7,11 +7,22 @@
 *
 *  Author: Michael Vallee
 *
-*  Last Modified: 8/14/2020
+*  Last Modified: 5/26/2022
 *
 ***********************************************************************/
 
-#include "library.h"
+//Standard Libraries
+#include <iostream>
+#include <string>
+#include <vector>
+//Additional Libraries
+#include "curses.h"
+//Header Files
+#include "choice.h"
+#include "encounter.h"
+#include "item.h"
+#include "player.h"
+#include "window.h"
 
 using namespace std;
 

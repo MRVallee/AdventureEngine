@@ -7,14 +7,19 @@
 *
 *  Author: Michael Vallee
 *
-*  Last Modified: 3/13/2020
+*  Last Modified: 5/26/2022
 *
 ***********************************************************************/
 
 #ifndef PLAYER
 #define PLAYER
 
-#include "library.h"
+//Standard Libraries
+#include <iostream>
+#include <string>
+#include <vector>
+//Header Files
+#include "item.h"
 
 using namespace std;
 
@@ -75,7 +80,7 @@ public:
 
 private:
 
-	string name;	//stores the name of the player
+	std::string name;	//stores the name of the player
 
 	int level;		//stores the level of the player
 	int xp;			//stores the experience of the player
@@ -100,7 +105,7 @@ private:
 	int cha;		//stores the player's current charisma
 
 	//stores the players inventory as a vector of the item class
-	vector<item> inventory;
+	std::vector<item> inventory;
 
 };
 
